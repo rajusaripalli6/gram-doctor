@@ -1,0 +1,117 @@
+body{
+    font-family: Arial,sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+    background-color: #f4fefc;
+}
+header{
+    background-color: #007f5f;
+    color: white;
+    padding:20px;
+    text-align: center;
+}
+nav{
+    margin-top: 10px;
+}
+nav a{
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: bold;
+
+}
+main {
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+footer {
+  z-index: 2;
+  position: relative;
+  background-color: #ccc;
+  text-align: center;
+ padding: 20px;
+}
+
+.doctor-card{
+    background-color: #e9f5db;
+    border-left: 5px solid #2d6a4f;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 10px;
+    border-radius: 8px;
+    
+}
+
+ .img {
+  background-image: url("...");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto; /* allow height to adjust to content */
+  width: 100%;
+  padding: 20px 0; /* optional spacing */
+  position: relative; /* important to allow stacking properly */
+  z-index: 1; /* keep it behind header/footer if needed */
+}
+
+.animated-heading{
+    opacity: 0;
+    animation: slideFade 1.0s ease-in-out forwards;
+}
+@keyframes slideFade{
+
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section{
+    background-color: #fefae0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #bc6c25;
+    border-radius: 8px;
+}
+h2{
+    font-size: 1.2rem;
+    color: #344e41;
+}
+form{
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+input,textarea{
+    width:100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+
+}
+button{
+    padding: 10px 20px;
+    background-color: #40916c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:aqua;
+}
+
+
+
+
